@@ -34,5 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: install dependency
+        run: npm i htmlhint --save-dev
+        
       - name: hello.html test
         run: npx htmlhint hello.html
