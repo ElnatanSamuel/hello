@@ -40,3 +40,8 @@ jobs:
         
       - name: hello.html test
         run: npx htmlhint hello.html
+        
+      - name: Run a multi test
+        run: |
+          npx htmlhint hello.html
+          npx htmlhint index.html
